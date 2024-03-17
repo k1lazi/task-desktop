@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.productList {
+    width: 318px;
+    height: 571px;
+    border: 1px solid transparent;
+}
+
+
+.productFoto {
+    width: 280px;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
+.foto1 {
+    background-image: url("/assets/images/product1.png");
+}
+
+.foto2 {
+    background-image: url("/assets/images/product2.jpeg");
+}
+
+.foto3 {
+    background-image: url("/assets/images/product3.jpeg");
+}
+
+.heartIcon {
+    background-color: rgba(242, 242, 242, 1);
+    margin-left: 270px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    margin-top: -40px;
+
+}
+
+.label2 {
+    visibility: hidden;
+}
+
+.points {
+    background-color: rgba(229, 244, 241, 1);
+    height: 24px;
+    width: 140px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.bestseller {
+    background-color: rgba(251, 201, 124, 1);
+    height: 24px;
+    width: 80px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select {
+    background-color: rgba(250, 210, 209, 1);
+    height: 24px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(28, 31, 32, 1);
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+.title3 {
+   margin-top: 13px;
+
+}
+
+
+.stars {
+
+    background-image: url("../assets/icons/img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%; /* maksymalna szerokość obrazu w kontenerze */
+    max-height: 100%; /* maksymalna wysokość obrazu w kontenerze */
+    height: 16px;
+    width: 80px;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 30px;
+
+}
+
+.button {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    margin-left: 19px;
+    margin-right: 19px;
+    height: 100%;
+}
+
+.productList:hover {
+    border: 1px solid rgba(251, 210, 208, 1);
+    .button {
+        display: block;
+    }
+    .button:hover {
+        background-color: black;
+        color: white;
+    }
+}
